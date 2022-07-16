@@ -1,0 +1,13 @@
+(defun s2 (lista)
+    (cond 
+        ((null lista) nil)
+        ((null (cdr lista)) (car lista))
+        ((and (equal (car '(+)) (car (cdr lista))) (equal 0 (car lista))) (list (car (cddr lista))))
+        ((and (equal (car '(+)) (car (cdr lista))) (equal 0 (car (cddr lista)))) (list (car lista)))
+        ((and (equal (car '(*)) (car (cdr lista))) (equal 1 (car lista))) (list (car (cddr lista))))
+        ((and (equal (car '(*)) (car (cdr lista))) (equal 1 (car (cddr lista)))) (list (car lista)))
+        ((and (equal (car '(*)) (car (cdr lista))) (equal 0 (car lista))) (list (car lista)))
+        ((and (equal (car '(*)) (car (cdr lista))) (equal 0 (car (cddr lista)))) (list (car (cddr lista))))
+        (T lista)
+    )
+)
