@@ -1,0 +1,10 @@
+(defun simp (lista)
+    (cond 
+        ((null lista) nil)
+        ((null (cdr lista)) (car lista))
+        ((atom (car lista)) (car lista))
+        ((or (equal (car (cdr lista)) (car '(+))) (equal (car (cdr lista)) (car '(*)))) (simp (car lista)))
+        ((or (equal (car (cdr lista)) (car '(+))) (equal (car (cdr lista)) (car '(*)))) (simp (car (cddr lista))))
+        (T (s2 lista))
+    )
+)
