@@ -3,3 +3,5 @@
 Professor: Sergio D. Zorzo
 
 Desenvolvidos por Guilherme Santos de Godoy
+
+- [Trabalho 1](https://github.com/GuilhermeSGodoy/Paradigmas-Linguagens-Programacao/tree/main/T1): Paradigma Funcional
